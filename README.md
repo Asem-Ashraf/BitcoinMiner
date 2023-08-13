@@ -10,6 +10,8 @@ The primary goal of this project was to try to use most of the devices and
 peripherals that I have interfaced along with studying how crypto-currencies 
 work.
 
+![img](output.gif)
+
 # Architecture
 This project consists of 3 types of MCUs:
 - Generator: Emulates the Bitcoin network's mempool. It's responsible for 
