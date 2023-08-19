@@ -32,10 +32,9 @@ Each MCU has its own LCD that writes progress messages and error codes.
 use the same source code. The manager can detect up to 8 miners currently, due to the 
 3-to-8 decoder used. This can be expanded by using a larger decoder.
 
-- Simplicity: simplifies mining by not using the Bitcoin mining real 
-cryptographic algorithms(SHA256). Instead, it uses the FNV-1a algorithm to 
-calculate a 4-byte block hash and compare it to the target. This is because of 
-the limited computational ability of the ATmega32.
+- Parallelism: at every point in time, multiple independent tasks are being 
+executed by different MCUs.
+
 
 # Execution
 The process starts by each MCU initializes their peripherals, then:
